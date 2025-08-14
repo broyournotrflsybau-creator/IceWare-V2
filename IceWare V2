@@ -23,7 +23,7 @@ local MainFrame = Library:CreateWindow({
 	Name = "IceWare V2",
 	Themeable = {
 		Image = "7059346386",
-		Info = "my 2nd version of aimbot (Aimbot V2)"
+		Info = "Made by Ice",
 		Credit = false
 	},
 	Background = "",
@@ -37,7 +37,7 @@ local SettingsTab = MainFrame:CreateTab({
 })
 
 local FOVSettingsTab = MainFrame:CreateTab({
-	Name = "FOV"
+	Name = "FOV Settings"
 })
 
 local FunctionsTab = MainFrame:CreateTab({
