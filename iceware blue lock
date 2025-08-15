@@ -1,17 +1,17 @@
-
+-- leaked by galaxy.lua ;; published by 25ms :p
 local Luna = loadstring(game:HttpGet("http://you.whimper.xyz/sources/lunaUi.lua"))()
 local VIM = game:GetService("VirtualInputManager")
 
 local Window = Luna:CreateWindow({
     Name = "IceWare V2",
-    Subtitle = "discord.gg/QDgYBQf2", 
+    Subtitle = "discord.gg/QDgYBQf2v", 
     LogoID = "",
     LoadingEnabled = false,
     LoadingTitle = "IceWare V2",
     LoadingSubtitle = "raping blue lock",
     ConfigSettings = {
         RootFolder = nil,
-        ConfigFolder = "nigga"
+        ConfigFolder = "IceWare"
     },
     KeySystem = false
 })
@@ -21,7 +21,46 @@ local AutoFarmTab = Window:CreateTab({
     Icon = "agriculture", 
     ImageSource = "Material",
     ShowTitle = true
+})
+local StatsTab = Window:CreateTab({
+	Name = "Stats",
+	Icon = "view_sidebar",
+	ImageSource = "Material",
+	ShowTitle = true
+})
+local GameStatsTab = Window:CreateTab({
+	Name = "Game Stats",
+	Icon = "view_sidebar",
+	ImageSource = "Material",
+	ShowTitle = true
+})
+local ESPTab = Window:CreateTab({
+	Name = "ESP",
+	Icon = "visibility",
+	ImageSource = "Material",
+	ShowTitle = true
+})
+local StyleTab = Window:CreateTab({
+	Name = "Styles",
+	Icon = "brush",
+	ImageSource = "Material",
+	ShowTitle = true
+})
 
+local FlowTab = Window:CreateTab({
+	Name = "Flow",
+	Icon = "waves",
+	ImageSource = "Material",
+	ShowTitle = true
+})
+local MiscTab = Window:CreateTab({
+	Name = "Misc",
+	Icon = "settings",
+	ImageSource = "Material",
+	ShowTitle = true
+})
+
+-- went lazy so js took some code from a script (only like a few lines)
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
@@ -84,6 +123,7 @@ UserInputService.InputBegan:Connect(function(input, gameProcessed)
         end
     end
 end)
+
 local player = game.Players.LocalPlayer
 local hrp = player.Character and player.Character:FindFirstChild("HumanoidRootPart")
 local ball = game.Workspace:FindFirstChild("Football")
