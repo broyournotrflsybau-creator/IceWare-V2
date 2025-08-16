@@ -1,4 +1,4 @@
--- leaked by galaxy.lua ;; published by 25ms :p
+
 local Luna = loadstring(game:HttpGet("http://you.whimper.xyz/sources/lunaUi.lua"))()
 local VIM = game:GetService("VirtualInputManager")
 
